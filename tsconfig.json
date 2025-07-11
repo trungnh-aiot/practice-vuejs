@@ -3,8 +3,13 @@
   "include": ["src", "typed-router.d.ts"],
   "compilerOptions": {
     "module": "esnext",
-    "moduleResolution": "bundler",
-    "types": ["unplugin-vue-router/client"]
+    "moduleResolution": "node",
+    "types": ["unplugin-vue-router/client"],
+    "lib": ["ESNext", "DOM"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "references": [
     {
