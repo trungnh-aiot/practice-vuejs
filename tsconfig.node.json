@@ -14,7 +14,7 @@
     "declaration": true,
     "declarationMap": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "types": ["node", "unplugin-vue-router/client"]
   }
 }

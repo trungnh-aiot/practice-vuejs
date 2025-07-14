@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import LoginForm from '@/features/login/login-form.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <login-form />
+  <RouterView />
 </template>
 
 <style scoped></style>

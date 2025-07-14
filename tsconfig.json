@@ -1,10 +1,10 @@
 {
   "files": [],
-  "include": ["src", "typed-router.d.ts"],
+  "include": ["src", "typed-router.d.ts", "src/custom.d.ts", "vite-env.d.ts"],
   "compilerOptions": {
     "module": "esnext",
-    "moduleResolution": "node",
-    "types": ["unplugin-vue-router/client"],
+    "moduleResolution": "bundler",
+    "types": ["unplugin-vue-router/client", "vite/client"],
     "lib": ["ESNext", "DOM"],
     "baseUrl": ".",
     "paths": {
