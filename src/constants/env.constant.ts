@@ -5,5 +5,7 @@ export interface EnvironmentVariables {
 
 export const ENV: EnvironmentVariables = {
   BACK_END_API: import.meta.env.VITE_API_ENDPOINT || 'http://localhost:3001',
-  API_TIME_OUT: parseInt(import.meta.VITE_API_TIME_OUT || '10000'),
+  API_TIME_OUT: parseInt(import.meta.env.VITE_API_TIME_OUT || '10000'),
 }
+
+console.log(import.meta.env)
